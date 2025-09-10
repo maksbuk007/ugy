@@ -1,0 +1,162 @@
+
+```html
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>United Grace Youth — United Grace Youth</title>
+  <meta name="description" content="United Grace Youth — молодежное служение церкви 'Благодать'. Чай, мероприятия, марафон хвалы, конференция 'Шаг веры'." />
+  <style>
+    :root{
+      --bg:#0f1113;
+      --card:#161819;
+      --muted:#b9bdc0;
+      --text:#eef0f1;
+      --accent:#9aa0a6;
+      --accent-2:#cfcfcf;
+      --radius:12px;
+      --maxw:1000px;
+      font-family: Inter, "Segoe UI", Roboto, Arial, sans-serif;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,var(--bg),#0b0c0d);color:var(--text)}
+    .wrap{max-width:var(--maxw);margin:28px auto;padding:20px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:64px;height:64px;border-radius:14px;background:linear-gradient(180deg,#ffffff0f,#ffffff06);
+      display:flex;align-items:center;justify-content:center;font-weight:800;color:var(--accent-2);font-size:18px;
+      border:1px solid rgba(255,255,255,0.03);}
+    h1{font-size:20px;margin:0}
+    nav a{color:var(--muted);text-decoration:none;margin-left:14px;font-weight:600}
+    nav a:hover{color:var(--accent-2)}
+    section{margin-top:22px}
+    .card{background:linear-gradient(180deg,#111213,#0d0e0f);padding:18px;border-radius:12px;border:1px solid rgba(255,255,255,0.03)}
+    .grid{display:grid;gap:16px}
+    .dirs{grid-template-columns:repeat(2,1fr)}
+    /* карточки направлений */
+    .dir{
+      padding:18px;
+      border-radius:14px;
+      background:linear-gradient(180deg,#141515,#0e0f10);
+      border:1px solid rgba(255,255,255,0.05);
+      text-align:center;
+      box-shadow:0 6px 16px rgba(0,0,0,0.35);
+      transition:transform 0.2s ease;
+    }
+    .dir:hover{transform:translateY(-4px)}
+    .icon{
+      width:60px;height:60px;
+      border-radius:50%;
+      background:rgba(255,255,255,0.05);
+      display:flex;align-items:center;justify-content:center;
+      font-size:28px;margin:0 auto 10px;
+    }
+    .dir h3{margin:0 0 6px 0;font-size:16px}
+    .dir p{margin:0;color:var(--muted);font-size:14px;line-height:1.45}
+    .leader{display:flex;gap:14px;align-items:center}
+    .contact{color:var(--accent-2);font-weight:700}
+    .cta{margin-top:12px;padding:12px;border-radius:10px;background:linear-gradient(180deg,#1a1b1c,#0f1011);border:1px solid rgba(255,255,255,0.02)}
+    .muted{color:var(--muted)}
+    footer{margin-top:26px;color:var(--muted);font-size:13px;text-align:center}
+    @media(max-width:800px){.dirs{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo">UGY</div>
+        <div>
+          <h1>United Grace Youth</h1>
+          <div class="muted" style="font-size:13px">молодёжное служение церкви «Благодать»</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">О нас</a>
+        <a href="#dirs">Направления</a>
+        <a href="#leader">Лидер</a>
+        <a href="#join">Присоединиться</a>
+      </nav>
+    </header>
+
+    <!-- About -->
+    <section id="about">
+      <div class="card">
+        <h2>О нас</h2>
+        <p class="lead">United Grace Youth — команда молодежного служения церкви «Благодать». Наша главная задача — создать пространство теплого общения и поддержки после молодежных встреч. Мы организуем чай, печеньки, небольшие интерактивы и тусовки, а также помогаем в подготовке крупных событий: марафона хвалы и конференции «Шаг веры».</p>
+
+<p style="margin-top:12px;color:var(--muted)">Мы стремимся:</p>
+        <ul style="margin:8px 0 0 18px;color:var(--muted)">
+          <li>создавать уютное место для общения;</li>
+          <li>привлекать и знакомить новых людей с церковной семьёй;</li>
+          <li>генерировать креативные идеи и реализовывать их вместе;</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Directions -->
+    <section id="dirs">
+      <h2>Направления</h2>
+      <div class="grid dirs" style="margin-top:14px">
+        <div class="dir">
+          <div class="icon">☕🍪</div>
+          <h3>Чай & Печеньки</h3>
+          <p>Организация чая, угощений и сервировки.</p>
+        </div>
+        <div class="dir">
+          <div class="icon">🤝</div>
+          <h3>Welcome</h3>
+          <p>Знакомство с новыми людьми и помощь им влиться в церковь.</p>
+        </div>
+        <div class="dir">
+          <div class="icon">🎨</div>
+          <h3>Атмосфера</h3>
+          <p>Дизайн, декор и оформление.</p>
+        </div>
+        <div class="dir">
+          <div class="icon">💡</div>
+          <h3>Идеи</h3>
+          <p>Креативные активности и форматы общения.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Leader -->
+    <section id="leader">
+      <div class="card">
+        <h2>Лидер служения</h2>
+        <div class="leader">
+          <div>
+            <div style="font-weight:800;font-size:16px">Жилич Даниэль</div>
+            <div class="muted" style="margin-top:6px">Координатор United Grace Youth</div>
+            <div style="margin-top:10px">
+              <div class="contact">📞 +375 (44) 721-79-77</div>
+              <div class="muted" style="margin-top:6px">Можно писать в любой мессенджер — ответим быстро.</div>
+            </div>
+            <div class="cta" style="margin-top:12px">
+              <strong style="display:block">Не бойся написать — мы открытые и дружелюбные!</strong>
+              <div class="muted" style="margin-top:8px">Расскажи, кто ты и какое направление тебе ближе.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Join -->
+    <section id="join">
+      <div class="card">
+        <h2>Как присоединиться</h2>
+        <p class="muted">Напиши нашему координатору — <strong>Жилич Даниэль, +375 (44) 721-79-77</strong>. Мы рады каждому, даже если не уверен(а) в своей роли!</p>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="year"></span> United Grace Youth — служение церкви «Благодать»
+    </footer>
+  </div>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
+```
+
