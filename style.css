@@ -65,7 +65,7 @@ nav a  {
   font-weight:600
 }
 
-nav a: hover  {
+nav a:hover  {
   color:  var(--accent-2)
 }
 
@@ -99,7 +99,7 @@ section  {
   transition:transform 0.2s ease;
 }
 
-.dir:  hover  {
+.dir:hover  {
   transform:translateY(-4px)
 }
 
